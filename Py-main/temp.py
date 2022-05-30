@@ -20,4 +20,5 @@ print(geometric_mean(1,2,3,4,5,6))
 print(arithmetic_mean(1,2,3,4,5,6))
 print(arithmetic_mean_lambda(1,2,3,4,5,6))
 
-        
+"Изменение выполнено на рабочем компе" 
+     
