@@ -3,3 +3,4 @@ citibike-tripdata.csv filter=lfs diff=lfs merge=lfs -text
 sber_data.csv filter=lfs diff=lfs merge=lfs -text
 wine.psd filter=lfs diff=lfs merge=lfs -text
 wine.csv filter=lfs diff=lfs merge=lfs -text
+wine_cleared.csv filter=lfs diff=lfs merge=lfs -text
