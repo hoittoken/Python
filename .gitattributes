@@ -6,3 +6,5 @@ wine.csv filter=lfs diff=lfs merge=lfs -text
 wine_cleared.csv filter=lfs diff=lfs merge=lfs -text
 hotels.psd filter=lfs diff=lfs merge=lfs -text
 hotels.csv filter=lfs diff=lfs merge=lfs -text
+hotels_test.csv.zip filter=lfs diff=lfs merge=lfs -text
+hotels_train.csv.zip filter=lfs diff=lfs merge=lfs -text
