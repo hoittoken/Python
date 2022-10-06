@@ -85,6 +85,8 @@ frozenlist @ file:///C:/ci/frozenlist_1637767271796/work
 fsspec @ file:///opt/conda/conda-bld/fsspec_1647268051896/work
 future @ file:///C:/ci/future_1607568713721/work
 gensim @ file:///C:/ci/gensim_1646825438310/work
+geographiclib @ file:///home/conda/feedstock_root/build_artifacts/geographiclib_1650904727084/work
+geopy==1.17.0
 glob2 @ file:///home/linux1/recipes/ci/glob2_1610991677669/work
 google-api-core @ file:///C:/ci/google-api-core-split_1613980333946/work
 google-auth @ file:///tmp/build/80754af9/google-auth_1626320605116/work
