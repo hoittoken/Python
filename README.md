@@ -1,2 +1,3 @@
 # Лекции по курсу Data Science от SkillFactory
-## Группа DSPR-96
+## [https://github.com/hoittoken/Python/tree/master/Py](dczrjt)
+
