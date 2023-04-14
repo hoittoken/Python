@@ -1,5 +1,11 @@
 ## Проект №5 Задача регрессии в рамках обучения профессии Data Science от Skill Factory
 
+## Предсказание продолжительность поездки на таксиЖ
+
+* [Базовое решение](https://github.com/hoittoken/Python/blob/master/Py/Projects/project_5/Project-5._aubakirov.ipynb)
+
+* [Улучшенное решение с сабмитом на Kaggle](https://github.com/hoittoken/Python/blob/master/Py/Projects/project_5/Project-5._aubakirov_for_Kaggle.ipynb)
+
 ## Бизнес-задача
 
 Определить характеристики и с их помощью **спрогнозировать длительность поездки** на такси.
