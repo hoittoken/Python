@@ -36,7 +36,7 @@ Bottleneck @ file:///C:/ci/bottleneck_1648010904582/work
 brotlipy==0.7.0
 cachetools @ file:///tmp/build/80754af9/cachetools_1619597386817/work
 category-encoders @ file:///C:/Windows/TEMP/abs_96hpd46mm1/croots/recipe/category_encoders_1659117695542/work
-certifi==2021.10.8
+certifi==2022.12.7
 cffi @ file:///C:/ci_310/cffi_1642682485096/work
 chardet @ file:///C:/ci/chardet_1607706937985/work
 charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
