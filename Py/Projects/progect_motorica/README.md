@@ -1,11 +1,6 @@
-## Стажировка в моторике
+# Стажировка в моторике
 
 
-[Motorica x SkillFactory internship test task on Kaggle](https://www.kaggle.com/competitions/motorica-x-skillfactory-internship-test-task/overview)
-
-
-
-[Тестовое задание](https://github.com/hoittoken/Python/tree/master/Py/Projects/progect_motorica) Модель распознавания жестов в парадигме обучения с учителем
 
 
 Значки которые мне нравятся:
@@ -19,7 +14,9 @@
 
 # Тестовое задание
 
-## Определение жеста по данным датчиков 
+Соревнование на Kaggle [Motorica x SkillFactory internship test task on Kaggle](https://www.kaggle.com/competitions/motorica-x-skillfactory-internship-test-task/overview)
+
+## [Task_1: Определение жеста по данным датчиков](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Task_1.ipynb)
 
 
 <!--
