@@ -1,6 +1,6 @@
 ## Проект №5 Задача регрессии в рамках обучения профессии Data Science от Skill Factory
 
-## Предсказание продолжительность поездки на таксиЖ
+## Предсказание продолжительность поездки на такси:
 
 * [Базовое решение](https://github.com/hoittoken/Python/blob/master/Py/Projects/project_5/Project-5._aubakirov.ipynb)
 
