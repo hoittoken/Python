@@ -6,7 +6,7 @@
 Стажировка проводится компанией моторика в кооперации с [SkillFactory.](https://skillfactory.ru/)
 
 
-## [**test_task**: Тестовое задание. Определение жеста по данным датчиков](https://https://github.com/hoittoken/Python/tree/master/Py/Projects/progect_motorica/test_task)
+## [**test_task**: Тестовое задание. Определение жеста по данным датчиков](https://github.com/hoittoken/Python/tree/master/Py/Projects/progect_motorica/test_task)
 
 ## [**task_1**]()
 
