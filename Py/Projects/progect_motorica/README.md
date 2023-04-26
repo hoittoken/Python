@@ -6,11 +6,11 @@
 Стажировка проводится компанией моторика в кооперации с [SkillFactory.](https://skillfactory.ru/)
 
 
-## [**test_task**: Тестовое задание. Определение жеста по данным датчиков](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Task_1.ipynb)
+## [**test_task**: Тестовое задание. Определение жеста по данным датчиков](https://https://github.com/hoittoken/Python/tree/master/Py/Projects/progect_motorica/test_task)
 
-## [**task_1**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Task_1.ipynb)
+## [**task_1**]()
 
-## [**task_2**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Task_1.ipynb)
+## [**task_2**]()
 
 
 Значки которые мне нравятся 🔥 
