@@ -8,3 +8,5 @@ hotels.psd filter=lfs diff=lfs merge=lfs -text
 hotels.csv filter=lfs diff=lfs merge=lfs -text
 hotels_test.csv.zip filter=lfs diff=lfs merge=lfs -text
 hotels_train.csv.zip filter=lfs diff=lfs merge=lfs -text
+Project5_train_data.zip filter=lfs diff=lfs merge=lfs -text
+osrm_data_train.zip filter=lfs diff=lfs merge=lfs -text
