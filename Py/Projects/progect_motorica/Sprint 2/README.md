@@ -27,7 +27,7 @@
 ***
 ## **1. Обзор данных**:
 
-Для обучения и тестов имеем данный собранные с двух пилотов:
+Для обучения и тестов имеем данные собранные с двух пилотов:
 
 | **Pilot_1** | **Pilot_2** |
 | - | - |
@@ -35,7 +35,7 @@
 | [**gestures_test.csv**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/gestures_test.csv "Выполнены по протоколу (повторяющийся паттерн)") | [**gestures_test_2.csv**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/gestures_test_2.csv "Выполнены по протоколу (повторяющийся паттерн)") |
 | [**free_movements.csv**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/free_movements.csv "Свободные жесты (без повторяющихся паттернов)") | [**free_movements.csv**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/free_movements_2.csv "Свободные жесты (без повторяющихся паттернов)") |
 
-*Fig_1. Разницы в силе сжатия/разжатия палцев для обоих пилотов, на тренировочных данных*
+*Fig_1. Разница в силе сжатия/разжатия палцев для обоих пилотов, на тренировочных данных*
 <img src=Fig_1.png>
 
 |**Активных датчиков:**| |
@@ -60,11 +60,11 @@
 *Fig_4. **Построенная** схема модели принятия решения*
 <img src=Fig_4.png>
 
-## 2. Блок препроцессинга
+## 2. Блок предпроцессинга
 
 [наверх](#0-содержание)
 
-В качестве предпроцессинга реализовано добавление 1 предикта (флажкового типа где 0 - нет признака движения, 1 - есть признак движения) к вектору показаний датчиков.
+В качестве предпроцессинга реализовано добавление 1 признака (флажкового типа, где 0 - нет признака движения, 1 - есть признак движения) к вектору показаний датчиков.
 
 Флаг 1/0 выдаётся `sklearn.linear_model.RidgeClassifier()` обученной на данных по изменения в показаний датчиков за 1 шаг.
 
@@ -160,7 +160,7 @@ model_lgb_1.fit(np.insert(X_train, -1, ridge.predict(X_train), axis=1), y_train)
 ```python
 def postprocessing(array, step=5):
     """_дискретизация выходных сигналов по 100/step количеству уровней
-        по умолчанию step=10 -> 10 уровней сигналов_
+        по умолчанию step=5 -> 20 уровней сигналов_
     """
     array[array < 0] = 0
     array = np.round(array / step, 0).astype(int) * step
@@ -189,7 +189,7 @@ def commands(dq):
 
 [наверх](#0-содержание)
 
-Рассматривалось 3 варианта данных для обучения 
+Рассматривалось 3 варианта данных для обучения:
 
 **Вариант_1:** учим модель на протокольных жестах
 
@@ -202,6 +202,7 @@ def commands(dq):
 |ENC2 | 77.11 | 470.57 |
 |ENC3 | 71.45 | 391.35 |
 |ENC4 | 298.68 | 659.92 |
+
 Сильно не попадаем во free_movements
 
 **Вариант_2:** учим модель на свободных жестах
@@ -215,6 +216,7 @@ def commands(dq):
 |ENC2 | 392.00 | 39.49 |
 |ENC3 | 447.47 | 49.36 |
 |ENC4 | 687.42 | 180.44 |
+
 Сильно не попадаем в протокольные жесты
 
 **Вариант_3:** учим модель на объединённых данных
@@ -228,6 +230,7 @@ def commands(dq):
 |ENC2 | 135.72 | 82.03 |
 |ENC3 | 127.19 | 88.21 |
 |ENC4 | 359.71 | 298.05 |
+
 Терпимо ошибаемся и в протокольных жестах и в free_movements
 
 ### **Вывод** - будем учить на всёх доступных данных
@@ -265,4 +268,4 @@ def commands(dq):
 4. Как протез сейчас реагирует на `free_movements` (это же быстрые "мельтешения" пальцев)
 
 
-[Презентация](https://docs.google.com/presentation/d/1a2s7xupdbl6BUUNC2blYWt_eawKg4N_LzyKeon0On4M/edit?usp=sharing) 
+[Презентация на docs.google.com](https://docs.google.com/presentation/d/1a2s7xupdbl6BUUNC2blYWt_eawKg4N_LzyKeon0On4M/edit?usp=sharing) 
