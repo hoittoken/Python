@@ -9,11 +9,11 @@
 
 ## Варианты решений:
 
-* ### [**baseline**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/Read%20data%20and%20Inference.ipynb "От организаторов"): Базовый скрипт от организаторов.
+* ### [**baseline**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%203/Read%20data%20and%20Inference.ipynb "От организаторов"): Базовый скрипт от организаторов.
 
-* ### [**Super_light_version**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/_super%20short%20solution%20Mike_A.ipynb "Для практической пробы"): Облегчённая версия (без визуализации). Всего 9 блоков кода.
+* ### [**Super_light_version**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%203/_super%20short%20solution%20Mike_A_palm_readable.ipynb "Для практической пробы"): Облегчённая версия (без визуализации). Всего 9 блоков кода.
 
-* ### [**Light_version**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/_Read%20data%20and%20Inference%20Mike_A.ipynb "Подготовка к Q&A сессии"): Полное решение. Визуализации, обоснования принятия решений.
+* ### [**Light_version**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%203/light_ver_sprint_3_Aubakirov.ipynb "Подготовка к Q&A сессии"): Полное решение. Визуализации, обоснования принятия решений.
 
 ## 0. Содержание:
 
@@ -27,16 +27,21 @@
 ***
 ## **1. Обзор данных**:
 
-Для обучения и тестов имеем данные собранные с двух пилотов:
+В спринте 3 данные представлены в `.palm` разрешении.
 
-| **Pilot_1** | **Pilot_2** |
+Стоит отдельно сказать, что данные между спринтами в рамках одного пилота объединять нельзя.
+Только данные за 3 спринт можно объединять между монтажами.
+Особенности данных 3 спринта:
+- наличие наводки на сигнал, тк при записи данных ноутбук, на который писались данные, был включен в сеть;
+- датчик на 8 каналов из-за чего 12 каналов первого порядка, вместо 16 (в спринтах 1 и 2).
+
+| **Pilot_1_mount1** | **Pilot_1_mount2** |
 | - | - |
-| [**gestures_train.csv**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/gestures_train.csv "Выполнены по протоколу (повторяющийся паттерн)") | [**gestures_train_2.csv**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/gestures_train_2.csv "Выполнены по протоколу (повторяющийся паттерн)") |
-| [**gestures_test.csv**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/gestures_test.csv "Выполнены по протоколу (повторяющийся паттерн)") | [**gestures_test_2.csv**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/gestures_test_2.csv "Выполнены по протоколу (повторяющийся паттерн)") |
-| [**free_movements.csv**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/free_movements.csv "Свободные жесты (без повторяющихся паттернов)") | [**free_movements.csv**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%202/free_movements_2.csv "Свободные жесты (без повторяющихся паттернов)") |
+| [**sprint3_pilote1_mount1_gestures.palm**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%203/sprint3_pilote1_mount1_gestures.palm.protocol.csv "Первый монтаж") | [**sprint3_pilote1_mount2_gestures.palm**](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/Sprint%203/sprint3_pilote1_mount2_gestures.palm.protocol.csv "Второй монтаж") |
 
-*Fig_1. Разница в силе сжатия/разжатия палцев для обоих пилотов, на тренировочных данных*
-<img src=Fig_1.png>
+
+*Fig_1. Разница в видк данных для разных монтажей*
+<img src=Figure 0.png>
 
 |**Активных датчиков:**| |
 | - | - |
