@@ -10,6 +10,11 @@
 ***
 
 ## Соревнование на Kaggle 
+
+## [Финальный вариант](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/test_task/p-m_aubakirov.ipynb)
+
+## [baseline от организаторов](https://github.com/hoittoken/Python/blob/master/Py/Projects/progect_motorica/test_task/public_baseline.ipynb)
+
 ## [Motorica x SkillFactory internship test task on Kaggle](https://www.kaggle.com/competitions/motorica-x-skillfactory-internship-test-task/overview)
 
 Значки которые мне нравятся 🔥 
