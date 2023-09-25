@@ -14,6 +14,7 @@
 
 ## [**sprint_3**: Третий спринт, финальные версии модели. Отработка на протезе.](https://github.com/hoittoken/Python/tree/master/Py/Projects/progect_motorica/Sprint%203)
 
+## [Краткие итоги стажировки (на aubakiroma.ru)](https://aubakirovma.ru/internship_motorica_team_report)
 
 Значки которые мне нравятся 🔥 
 
