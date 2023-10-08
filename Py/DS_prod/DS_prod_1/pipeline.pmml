@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_4" version="4.4.1">
+    <Header copyright="Copyright (c) 2021 Software AG" description="Default description">
+        <Application name="Nyoka" version="5.5.0"/>
+        <Timestamp>2023-09-28 10:19:20.311716</Timestamp>
+    </Header>
+    <DataDictionary numberOfFields="11">
+        <DataField name="age" optype="continuous" dataType="double"/>
+        <DataField name="sex" optype="continuous" dataType="double"/>
+        <DataField name="bmi" optype="continuous" dataType="double"/>
+        <DataField name="bp" optype="continuous" dataType="double"/>
+        <DataField name="s1" optype="continuous" dataType="double"/>
+        <DataField name="s2" optype="continuous" dataType="double"/>
+        <DataField name="s3" optype="continuous" dataType="double"/>
+        <DataField name="s4" optype="continuous" dataType="double"/>
+        <DataField name="s5" optype="continuous" dataType="double"/>
+        <DataField name="s6" optype="continuous" dataType="double"/>
+        <DataField name="target" optype="continuous" dataType="double"/>
+    </DataDictionary>
+    <TransformationDictionary>
+        <DerivedField name="minMaxScaler(age)" optype="continuous" dataType="double">
+            <Apply function="+">
+                <Apply function="*">
+                    <FieldRef field="age"/>
+                    <Constant dataType="double">4.5881597377143803</Constant>
+                </Apply>
+                <Constant dataType="double">0.4919683257918552</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="minMaxScaler(sex)" optype="continuous" dataType="double">
+            <Apply function="+">
+                <Apply function="*">
+                    <FieldRef field="sex"/>
+                    <Constant dataType="double">10.4907845791424315</Constant>
+                </Apply>
+                <Constant dataType="double">0.4683257918552035</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="minMaxScaler(bmi)" optype="continuous" dataType="double">
+            <Apply function="+">
+                <Apply function="*">
+                    <FieldRef field="bmi"/>
+                    <Constant dataType="double">3.8339071393773243</Constant>
+                </Apply>
+                <Constant dataType="double">0.3461071014546959</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="minMaxScaler(bp)" optype="continuous" dataType="double">
+            <Apply function="+">
+                <Apply function="*">
+                    <FieldRef field="bp"/>
+                    <Constant dataType="double">4.0909429833160997</Constant>
+                </Apply>
+                <Constant dataType="double">0.4598170926008542</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="minMaxScaler(s1)" optype="continuous" dataType="double">
+            <Apply function="+">
+                <Apply function="*">
+                    <FieldRef field="s1"/>
+                    <Constant dataType="double">3.5625935547838470</Constant>
+                </Apply>
+                <Constant dataType="double">0.4516679975157484</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="minMaxScaler(s2)" optype="continuous" dataType="double">
+            <Apply function="+">
+                <Apply function="*">
+                    <FieldRef field="s2"/>
+                    <Constant dataType="double">3.1806508981813106</Constant>
+                </Apply>
+                <Constant dataType="double">0.3677248021488704</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="minMaxScaler(s3)" optype="continuous" dataType="double">
+            <Apply function="+">
+                <Apply function="*">
+                    <FieldRef field="s3"/>
+                    <Constant dataType="double">3.5275096785990900</Constant>
+                </Apply>
+                <Constant dataType="double">0.3608891108891109</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="minMaxScaler(s4)" optype="continuous" dataType="double">
+            <Apply function="+">
+                <Apply function="*">
+                    <FieldRef field="s4"/>
+                    <Constant dataType="double">3.8222070280358009</Constant>
+                </Apply>
+                <Constant dataType="double">0.2919956091365700</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="minMaxScaler(s5)" optype="continuous" dataType="double">
+            <Apply function="+">
+                <Apply function="*">
+                    <FieldRef field="s5"/>
+                    <Constant dataType="double">3.8506798351852662</Constant>
+                </Apply>
+                <Constant dataType="double">0.4855596404677263</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="minMaxScaler(s6)" optype="continuous" dataType="double">
+            <Apply function="+">
+                <Apply function="*">
+                    <FieldRef field="s6"/>
+                    <Constant dataType="double">3.6579246897881434</Constant>
+                </Apply>
+                <Constant dataType="double">0.5039421362950774</Constant>
+            </Apply>
+        </DerivedField>
+    </TransformationDictionary>
+    <RegressionModel modelName="LinearRegression" functionName="regression">
+        <MiningSchema>
+            <MiningField name="age" usageType="active" optype="continuous"/>
+            <MiningField name="sex" usageType="active" optype="continuous"/>
+            <MiningField name="bmi" usageType="active" optype="continuous"/>
+            <MiningField name="bp" usageType="active" optype="continuous"/>
+            <MiningField name="s1" usageType="active" optype="continuous"/>
+            <MiningField name="s2" usageType="active" optype="continuous"/>
+            <MiningField name="s3" usageType="active" optype="continuous"/>
+            <MiningField name="s4" usageType="active" optype="continuous"/>
+            <MiningField name="s5" usageType="active" optype="continuous"/>
+            <MiningField name="s6" usageType="active" optype="continuous"/>
+            <MiningField name="target" usageType="target" optype="continuous"/>
+        </MiningSchema>
+        <Output>
+            <OutputField name="predicted_target" optype="continuous" dataType="double" feature="predictedValue"/>
+        </Output>
+        <RegressionTable intercept="-2.0761196515561551">
+            <NumericPredictor name="minMaxScaler(age)" exponent="1" coefficient="-2.1816734534175746"/>
+            <NumericPredictor name="minMaxScaler(sex)" exponent="1" coefficient="-22.8596480904984283"/>
+            <NumericPredictor name="minMaxScaler(bmi)" exponent="1" coefficient="135.5916826245534992"/>
+            <NumericPredictor name="minMaxScaler(bp)" exponent="1" coefficient="79.2933675255914920"/>
+            <NumericPredictor name="minMaxScaler(s1)" exponent="1" coefficient="-222.3592521489009926"/>
+            <NumericPredictor name="minMaxScaler(s2)" exponent="1" coefficient="149.8872514672565899"/>
+            <NumericPredictor name="minMaxScaler(s3)" exponent="1" coefficient="28.6443630618646310"/>
+            <NumericPredictor name="minMaxScaler(s4)" exponent="1" coefficient="46.3248684261713137"/>
+            <NumericPredictor name="minMaxScaler(s5)" exponent="1" coefficient="195.1015747121855100"/>
+            <NumericPredictor name="minMaxScaler(s6)" exponent="1" coefficient="18.4877212952192949"/>
+        </RegressionTable>
+    </RegressionModel>
+</PMML>
