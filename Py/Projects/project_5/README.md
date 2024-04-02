@@ -2,7 +2,7 @@
 
 ## Предсказание продолжительность поездки на такси:
 
-* [Базовое решение](https://github.com/hoittoken/Python/blob/master/Py/Projects/project_5/Project-5._aubakirov.ipynb)
+* [Базовое решение](https://github.com/hoittoken/Python/blob/master/Py/Projects/project_5/Project-5._aubakirov_test.ipynb))
 
 * [Улучшенное решение с сабмитом на Kaggle](https://github.com/hoittoken/Python/blob/master/Py/Projects/project_5/Project-5._aubakirov_for_Kaggle.ipynb)
 
