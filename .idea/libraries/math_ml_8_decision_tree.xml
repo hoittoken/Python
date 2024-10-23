@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="math&amp;ml-8 decision tree">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-8 decision tree/bill_authentication.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-8 decision tree/voice_gender.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-8 decision tree/AmesHousing.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

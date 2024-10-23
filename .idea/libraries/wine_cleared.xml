@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="wine_cleared">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Py/EDA/eda_3_FE/wine_cleared.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

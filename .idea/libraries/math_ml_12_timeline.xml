@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="math&amp;ml-12 timeline">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-12 timeline/southern_osc.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-12 timeline/AirPassengers.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-12 timeline/daily-total-female-births.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-12 timeline/tovar_moving.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

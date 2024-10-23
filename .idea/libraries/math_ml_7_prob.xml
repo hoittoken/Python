@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="math&amp;ml-7 prob">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-7 prob/SMSSpamCollection.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-7 prob/spam_or_not_spam.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="ml_4_clasterization">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Py/ML/ml_4_clasterization/housing.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/ML/ml_4_clasterization/values_from_the_instrument.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/ML/ml_4_clasterization/airbnb.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/ML/ml_4_clasterization/segmented_customers.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/ML/ml_4_clasterization/pokemon.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

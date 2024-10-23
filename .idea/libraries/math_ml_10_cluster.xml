@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="math&amp;ml-10 cluster">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-10 cluster/CC_GENERAL.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-10 cluster/snsdata.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

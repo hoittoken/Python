@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="math&amp;ml-14 recomendation">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-14 recomendation/movie.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Py/Math&amp;ML/math&amp;ml-14 recomendation/shared_articles.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

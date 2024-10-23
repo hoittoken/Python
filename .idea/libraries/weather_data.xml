@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="weather_data">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Py/Projects/project_5/weather_data.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

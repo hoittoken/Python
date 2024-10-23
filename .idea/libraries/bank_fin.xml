@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bank_fin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Py/Projects/project_4/bank_fin.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
