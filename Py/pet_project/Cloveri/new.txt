@@ -1,0 +1,61 @@
+Table interns {
+  id serial [primary key]
+  email varchar
+  name varchar
+  role varchar
+  internship varchar
+  start date
+  end date
+  notes text
+}
+
+Table grades {
+  id serial [primary key]
+  ai float
+  programing float
+  architecture float
+  project_management float
+  communication float
+  personnel_management float
+  information_management float
+  infrastructure float
+  data_management float
+  math float
+  data_analysis float
+  visual float
+  ux_ui float
+  seo float
+  typography float
+  skill17 float
+  skill18 float
+  skill19 float
+  skill20 float
+}
+
+Table skills {
+  role varchar [primary key]
+  Pycaret varchar
+  Random_Forest varchar
+  Anomaly_Detеction varchar
+  Gradient_Boosting varchar
+  Cluster_analysis varchar
+  K_fold varchar
+  Optuna varchar
+  Shap varchar
+  Tsfresh varchar
+  Sklearn_feature_selection varchar
+  imblearn varchar
+  Streamlit varchar
+  tool13 varchar
+  tool14 varchar
+  tool15 varchar
+  tool16 varchar
+  tool17 varchar
+  tool18 varchar
+  tool19 varchar
+  tool20 varchar
+
+}
+
+Ref: interns.id > grades.id
+Ref: interns.role > skills.role
